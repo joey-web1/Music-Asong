@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicAsong</title>
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            border: 1px solid red;
+            padding: 10px;
+            background-color: rgb(43, 38, 38);
+        }
+        .maincon {
+            padding: 10px;
+            margin: 1rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 5px 8px 8px #8b8989ef;
+            background-color: #d1e8ee;
+            font-family: sans-serif;
+        }
+        .maincon img {
+            background-image: cover;
+            height: 180px;
+            width: 320px;
+            border-radius: 15px;
+            border: 3px solid black;
+        }
+        .maincon h1 {
+            font-size: 23px;
+        }
+        audio {
+            box-shadow: 5px 8px 8px #302f2fef;
+            border-radius: 30px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="maincon">
+                <img src="IMG_0172.JPG" alt="cover">
+                <h1>รวมเพลงฮิต เพลงเก่า SILLY FOOLS</h1>
+                <p>-SILLY FOOLS-</p>
+
+                <audio controls>
+                    <source src="Musiccc.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="service-worker.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('PWA Ready!', reg))
+                .catch(err => console.log('PWA Failed', err));
+            });
+        }
+    </script>
+
+</body>
+</html>
