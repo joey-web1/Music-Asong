@@ -3,61 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusicAsong</title>
+    <title>musciApp</title>
     <link rel="manifest" href="manifest.json">
 
     <style>
-        body {
-            background-color: rgb(43, 38, 38);
-        }
-        .container {
-            max-width: 375px;
-            margin: 0 auto;
-            padding: 10px;
-        }
-        .maincon {
-            padding: 10px;
-            margin: 1rem 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 5px 8px 8px #8b8989ef;
-            background-color: #d1e8ee;
-            font-family: sans-serif;
-        }
-        .maincon img {
-            background-image: cover;
-            height: 180px;
-            width: 220px;
-            border-radius: 15px;
         
-        }
-        .maincon h1 {
-            font-size: 23px;
-        }
-        audio {
-            box-shadow: 5px 8px 8px #302f2fef;
-            border-radius: 30px;
-        }
-        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    .nav-con {
+        text-align: center;
+        background-color: red;
+        color: white;
+        font-family: sans-serif;
+        padding: 5px;
+        margin: 0 10px;
+        border-radius: 10px;
+    }
+    .show {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 10px;
+        font-family: Arial;
+        font-size: 17px;
+        align-items: center;
+    }
+    .show h1 {
+        border: 2px solid red;
+        border-radius: 10px;
+        padding: 0 5px;
+    }
+    .show img {
+        height: 75px;
+        width: 85px;
+        border-radius: 50%;
+        border: 2px solid rgb(131, 128, 128);
+    }
+    .itemmusic {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        text-align: center;
+        margin: 5px 10px;
+    }
+    audio {
+        width: 100%;
+    }
+    .item1 {
+        background-color: rgb(223, 218, 218);
+        border-radius: 10px;
+    }
+    .item1 img {
+        width: 100%;
+        padding: 10px;
+        height: 150px;
+    }
+    .item2 {
+        margin-left: 5px;
+        background-color: rgb(223, 218, 218);
+        border-radius: 10px;
+    }
+    .item2 img {
+        width: 100%;
+        padding: 10px;
+        height: 150px;
+        background-position: cover;
+    }
+
     </style>
 
 </head>
 <body>
-    
+
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <h3>Music</h3>
+                <p>แอพเถื่อน.com</p>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="show">
+                <h1>เพลง</h1>
+                <img src="ARXX1080.JPG" alt="cover">
+            </div>
+        </div>
+    </section>
+
     <main>
         <div class="container">
-            <div class="maincon">
-                <img src="IMG_0172.JPG" alt="cover">
-                <h1>ปากอง เพื่อชีวิต</h1>
-                <p>-----------</p>
+            <div class="itemmusic">
+                <div class="item1">
+                    <img src="img1.png" alt="cover">
+                    <h3>ปากอง เพื่อชีวิต</h3>
+                    <p>ปากองเพชรบุรี</p>
 
-                <audio controls>
-                    <source src="Musiccc.mp3" type="audio/mpeg">
-                </audio>
+                    <audio controls>
+                        <source src="m1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="item2">
+                    <img src="img2.png" alt="cover">
+                    <h3>ชื่อเพลง</h3>
+                    <p>นักร้อง</p>
+
+                    <audio controls>
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                </div>
             </div>
         </div>
     </main>
-
 
     <script src="service-worker.js"></script>
     <script>
@@ -69,6 +135,6 @@
             });
         }
     </script>
-
+    
 </body>
 </html>

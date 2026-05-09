@@ -1,5 +1,5 @@
 {
-  "name": "My Music Player",
+  "name": "musciApp",
   "short_name": "MusicApp",
   "start_url": "index.html",
   "display": "standalone",
@@ -7,12 +7,12 @@
   "theme_color": "#a1c4fd",
   "icons": [
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Xd4a75FLX0lNNES5_dT-FZ7HP8wgmIqXxg&s",
+      "src": "https://cdn.readawrite.com/articles/6395/6394766/thumbnail/large.gif?1",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Xd4a75FLX0lNNES5_dT-FZ7HP8wgmIqXxg&s",
+      "src": "https://cdn.readawrite.com/articles/6395/6394766/thumbnail/large.gif?1",
       "sizes": "512x512",
       "type": "image/png"
     }
