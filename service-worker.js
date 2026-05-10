@@ -1,8 +1,8 @@
 const CACHE_NAME = 'music-player-v1';
 const ASSETS = [
   'index.html',
-  'm1.mp3', // ใส่ชื่อไฟล์เพลงทั้งหมดของคุณ
-  'ARXX1080.JPG','img1.png','img2.png','m2.mp3',  // ใส่ชื่อรูปภาพทั้งหมดของคุณ
+  'm1.mp3','m2.mp3','m3.mp3',
+  'ARXX1080.JPG','img1.png','img2.png','img3.png',
   'manifest.json'
 ];
 
