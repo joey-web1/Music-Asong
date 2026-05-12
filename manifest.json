@@ -4,7 +4,7 @@
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#f0f0f0",
-  "theme_color": "#a1c4fd",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "https://cdn.readawrite.com/articles/6395/6394766/thumbnail/large.gif?1",
